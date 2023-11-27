@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Bugzilla Bug Enhancement Service</title>
     <style>
+         .logo {
+            display: block; /* This will allow margin auto to center the image */
+            margin: 20px auto; /* Vertical margin for spacing, auto for horizontal centering */
+            max-width: 50%; /* To ensure the image is responsive and fits the container */
+            height: 300px; /* To maintain the aspect ratio of the image */
+        }
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(45deg, #27108b, #87effd);
@@ -18,38 +24,79 @@
 
         #main-container {
             text-align: center;
+            background: #ffffff; /* Adding a light background for the container */
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            color: #27108b; /* Adjusting title color to match the theme */
+            margin-bottom: 30px;
         }
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 15px 30px; /* Slightly larger buttons for better clickability */
+            font-size: 20px; /* Larger font size for better readability */
             text-align: center;
             text-decoration: none;
             background-color: #ff5555;
             color: #fff;
             border: none;
-            border-radius: 5px;
-            margin: 10px;
+            border-radius: 8px;
+            margin: 15px;
             cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition for button hover */
         }
 
         .button:hover {
-            background-color: #cc0000; 
+            background-color: #cc0000;
         }
 
         .button.secondary {
-            background-color: #4CAF50; 
+            background-color: #4CAF50;
         }
 
         .button.secondary:hover {
-            background-color: #45a049; 
+            background-color: #45a049;
+        }
+
+        /* Adding a section for bug description or ID input */
+        .input-group {
+            margin: 30px 0;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: calc(100% - 22px); /* Accounting for padding and border */
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .input-group button {
+            padding: 10px 20px;
+            display: block;
+            width: 100%;
+            margin-top: 10px; /* Space between input and button */
         }
     </style>
 </head>
 <body>
     <div id="main-container">
-        <h1>Bugzilla Bug Enhancement Service</h1>
+         <!-- Image Tag for the Logo -->
+         <img src="https://raw.githubusercontent.com/JAgrit20/aws_cicd_pipline_codedeploy/main/DALL%C2%B7E%202023-11-27%2015.39.15%20-%20Design%20a%20modern%20and%20professional%20logo%20for%20a%20project%20called%20_Bug%20Resolve%20Hub_.%20The%20logo%20should%20feature%20a%20stylized%20bug%20or%20magnifying%20glass%20icon%20that%20con.png" alt="Bug Resolve Hub Logo" class="logo">
+      
+        <h1>Bug Resolve Hub</h1>
+      
         <p>Choose your role:</p>
         <a href="developers.html" class="button">Developer</a>
         <a href="managers.html" class="button secondary">Manager</a>
